@@ -25,11 +25,6 @@ touched most files here.
 * `docker run -d -p 80:80 webapp`
 * go to 127.0.0.1 to see if works
 
-#### Build with python2
-* `docker build -f Dockerfile-py2 -t webapp .`
-* `docker run -d -p 80:80 webapp`
-* go to 127.0.0.1 to see if works
-
 ### How to insert your application
 
 In /app currently a django project is created with startproject. You will
@@ -39,3 +34,4 @@ Dockerfile
 
 uWSGI chdirs to /app so in uwsgi.ini you will need to make sure the python path
 to the wsgi.py file is relative to that.
+
